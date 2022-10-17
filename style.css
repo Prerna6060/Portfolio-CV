@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("homebg.webp") no-repeat center center/cover;
+}
+.sidebar{
+    background-color: rgb(204, 200, 224);
+    width: 230px;
+    height: 100vh;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    transition: transfrom 0.3s ease-in;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+}
+.sidebar nav{
+   padding: 20px;
+}   
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px; 
+    padding: 33px ;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+
+}
+.sidebar nav li a:hover{
+    color: rgb(197, 93, 74);
+    /* text-decoration: dotted; */
+}
+.main{
+    /* background-color: brown; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.info-container{
+    /* background-color: blanchedalmond; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    margin-left: 188px;
+    flex-direction: column;
+    font-family: 'Combo', cursive;
+}
+.devPic img{
+    width: 381px;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 20px;
+}
+.hello{
+    font-size: 55px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 40px;
+    color: rgb(39, 37, 37);
+}
+.moreAbout{
+    font-size: 25px;
+    margin-top: 5px;
+}
+.buttons{
+    margin-top: 30px;
+}
+.buttons button{
+    padding: 10px;
+    background-color: rgb(158, 214, 214);
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: rgb(150, 109, 158);
+    color: rgb(221, 198, 177);
+}
+
+.sidebarGo{
+    position: absolute;
+    transform: translate(-443px , 0px);
+}
+.cross-ham{
+   position: absolute;
+   cursor: pointer;
+   left: 13px;
+   top: 13px;
+}
+
+.cross{
+    margin-left: 185px; 
+}
+
+/* ..............media query............... */
+@media(max-width:766px)and (min-width:100px) {
+
+    .main .devPic img {
+        display: flex;
+        flex-direction: column;
+        margin-top: 490px;
+        margin-left: -215px;
+    }
+}
+@media (max-width:766px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        margin-top: -161px;
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+}
+@media (max-width:700px)  {
+    .devPic{
+        display: none;
+    }
+    
+}

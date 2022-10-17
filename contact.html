@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="cross-ham">
+                <img class="ham" src="ham.png" alt="" width="25">
+                <img class="cross" src="cross.png" alt="" width="20">
+            </div>
+            <div class="contact-form">
+                <form action="/contact" , method="Post" , class="myForm">
+
+                    <h1 id="contact-heading">Contact Me</h1>
+                    <input type="text" name="name" placeholder="Enter Name" require>
+                    <input type="email" name="email" placeholder="Enter Email" require>
+                    <input type="phone" name="number" placeholder="Enter Number" require>
+                    <textarea name="text" id="msg" cols="30" rows="10">Message:</textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5c6b625094.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

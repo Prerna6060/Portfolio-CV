@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media(max-width:766px)and (min-width:535px) {
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            margin-top: -161px;
+        }
+        .main .divpic img {
+            display: flex;
+            flex-direction: column;
+            margin-top: 490px;
+            margin-left: -215px;
+        }
+     }
+    </style>
+    
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="cross-ham">
+                <img class="ham" src="ham.png" alt="" width="25">
+                <img class="cross" src="cross.png" alt="" width="20">
+            </div>
+            <div class="info-container">
+                <div class="devInfo">
+                    <div class="hello">Hi, I am </div>
+                    <div class="name">Prerna Sharma </div>
+                    <div class="about">Developer, Dancer.</div>
+                    <div class="moreAbout">I'm developer, who love to dance and enjoy traveling</div>
+                    <div class="buttons">
+                        <a href="/prerna sharma.pdf" target="_blank"><button>Download CV</button></a>
+                        <a href="/contact.html"><button>Contact me</button></a>
+                    </div>
+                </div>
+                <div class="devPic"><img src="me.jpg" alt="Prerna Sharma"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5c6b625094.js" crossorigin="anonymous"></script>
+</body>
+</html>

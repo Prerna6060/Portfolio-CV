@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 0px; */
+    background: url("contactbg.webp") no-repeat center center/cover;
+}
+.sidebar{
+    background-color: rgb(204, 200, 224);
+    width: 230px;
+    height: 100vh;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    transition: transfrom 0.3s ease-in;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+}
+.sidebar nav{
+   padding: 20px;
+}   
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px; 
+    padding: 33px ;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar nav li a:hover{
+    color: rgb(197, 93, 74);
+    /* text-decoration: dotted; */
+}
+
+.sidebarGo{
+    position: absolute;
+    transform: translate(-443px , 0px);
+}
+.container{
+    display: flex;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 396px;
+    width: 400px;
+    padding: 13px 23px;
+    font-size: 10px;
+    margin-left: 215px;
+}
+input,textarea{
+    margin: 13px 7px;
+    padding: 7px 9px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.btn{
+    margin: 1px 156px;
+    padding: auto;
+    background-color: rgb(80, 147, 224);
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: rgb(66, 61, 61);
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+.btn:hover{
+    background-color: rgb(74, 184, 142);
+    color: wheat;
+}
+#contact-heading{
+    text-align: center;
+    font-family: 'Port Lligat Slab', serif;
+    font-size: 50px;
+    color: rgb(17, 37, 148);
+}
+.contact-form{
+    min-height: 86vh;
+    display: flex;
+    /* margin: auto; */
+    margin-top: 0px;
+    justify-content: center;
+    justify-content: center;
+    padding-left: 250px;
+}
+
+.cross-ham{
+   position: absolute;
+   cursor: pointer;
+   left: 13px;
+   top: 13px;
+   /* width: 250px; */
+}
+.cross{
+    margin-left: 185px;
+
+}
+@media(max-width:766px)and (min-width:100px) {
+
+    .main .devPic img {
+        display: flex;
+        flex-direction: column;
+        margin-top: 490px;
+        margin-left: -215px;
+    }
+}
+@media (max-width:766px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        margin-top: -161px;
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+}
+@media (max-width:700px)  {
+    .devPic{
+        display: none;
+    }
+    
+}
